@@ -1,0 +1,227 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="ResiliencePlatform" name="Resilience Platform">
+    <mxGraphModel dx="1420" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Title -->
+        <mxCell id="title" value="Resilience Platform" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#1a1a1a;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="5" width="360" height="35" as="geometry"/>
+        </mxCell>
+
+        <!-- Azure Cloud Boundary -->
+        <mxCell id="cloud" value="" style="rounded=1;whiteSpace=wrap;arcSize=3;fillColor=none;strokeColor=#0078D4;strokeWidth=2;dashed=1;dashPattern=8 4;" vertex="1" parent="1">
+          <mxGeometry x="210" y="50" width="1130" height="670" as="geometry"/>
+        </mxCell>
+        <mxCell id="cloudLabel" value="Microsoft Azure" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#FFFFFF;fillColor=#0078D4;rounded=1;arcSize=50;spacingLeft=12;spacingRight=12;" vertex="1" parent="1">
+          <mxGeometry x="225" y="35" width="150" height="28" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 1 Background: Ingress -->
+        <mxCell id="t1bg" value="" style="rounded=1;whiteSpace=wrap;arcSize=6;fillColor=#E8F4FD;strokeColor=#B3D9F2;strokeWidth=1;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="230" y="70" width="1090" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="t1label" value="INGRESS" style="text;html=1;align=left;verticalAlign=top;fontSize=9;fontStyle=1;fontColor=#0078D4;fillColor=none;strokeColor=none;spacingLeft=6;spacingTop=2;" vertex="1" parent="1">
+          <mxGeometry x="232" y="72" width="70" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 2 Background: Compute -->
+        <mxCell id="t2bg" value="" style="rounded=1;whiteSpace=wrap;arcSize=6;fillColor=#E8F8E8;strokeColor=#B3E0B3;strokeWidth=1;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="230" y="230" width="1090" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2label" value="COMPUTE" style="text;html=1;align=left;verticalAlign=top;fontSize=9;fontStyle=1;fontColor=#2E7D32;fillColor=none;strokeColor=none;spacingLeft=6;spacingTop=2;" vertex="1" parent="1">
+          <mxGeometry x="232" y="232" width="70" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 3 Background: Data and Services -->
+        <mxCell id="t3bg" value="" style="rounded=1;whiteSpace=wrap;arcSize=6;fillColor=#FFF3E0;strokeColor=#FFCC80;strokeWidth=1;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="230" y="400" width="1090" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="t3label" value="DATA &amp; SERVICES" style="text;html=1;align=left;verticalAlign=top;fontSize=9;fontStyle=1;fontColor=#E65100;fillColor=none;strokeColor=none;spacingLeft=6;spacingTop=2;" vertex="1" parent="1">
+          <mxGeometry x="232" y="402" width="110" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 4 Background: Management and Security -->
+        <mxCell id="t4bg" value="" style="rounded=1;whiteSpace=wrap;arcSize=6;fillColor=#F3E5F5;strokeColor=#CE93D8;strokeWidth=1;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="230" y="570" width="1090" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="t4label" value="MANAGEMENT &amp; SECURITY" style="text;html=1;align=left;verticalAlign=top;fontSize=9;fontStyle=1;fontColor=#6A1B9A;fillColor=none;strokeColor=none;spacingLeft=6;spacingTop=2;" vertex="1" parent="1">
+          <mxGeometry x="232" y="572" width="170" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- User -->
+        <mxCell id="user" value="User" style="shape=mxgraph.azure2.identity.Users;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="60" y="95" width="50" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 1: Application Gateway -->
+        <mxCell id="gateway" value="Application&#xa;Gateway" style="shape=mxgraph.azure2.networking.Application_Gateways;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="750" y="95" width="50" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 2: App Service -->
+        <mxCell id="webapp" value="App Service&#xa;(Web App)" style="shape=mxgraph.azure2.app_services.App_Services;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="380" y="260" width="50" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 2: API Management -->
+        <mxCell id="apim" value="API&#xa;Management" style="shape=mxgraph.azure2.integration.API_Management_Services;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="700" y="260" width="50" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 2: Azure Functions -->
+        <mxCell id="functions" value="Azure Functions&#xa;(Calculation)" style="shape=mxgraph.azure2.compute.Function_Apps;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="260" width="50" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 3: Azure Maps -->
+        <mxCell id="maps" value="Azure Maps" style="shape=mxgraph.azure2.iot.Maps_Accounts;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="320" y="430" width="50" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 3: MySQL Database -->
+        <mxCell id="mysql" value="Database&#xa;for MySQL" style="shape=mxgraph.azure2.databases.Azure_Database_MySQL_Server;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="580" y="430" width="50" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 3: Blob Storage -->
+        <mxCell id="blob" value="Blob&#xa;Storage" style="shape=mxgraph.azure2.storage.Blob_Block;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="850" y="430" width="50" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 3: Key Vault -->
+        <mxCell id="keyvault" value="Key Vault" style="shape=mxgraph.azure2.security.Key_Vaults;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="430" width="50" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Tier 4: Monitor + App Insights -->
+        <mxCell id="monitor" value="Monitor +&#xa;App Insights" style="shape=mxgraph.azure2.management_governance.Monitor;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="700" y="600" width="50" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- PRIMARY FLOW EDGES (blue, bold) -->
+
+        <!-- User to Application Gateway -->
+        <mxCell id="e1" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#0078D4;fontColor=#0078D4;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="user" target="gateway">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Gateway to App Service -->
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#0078D4;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="gateway" target="webapp">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="775" y="210"/>
+              <mxPoint x="405" y="210"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- App Service to API Management -->
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#0078D4;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="webapp" target="apim">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- API Management to Functions -->
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#0078D4;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="apim" target="functions">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- DATA CONNECTION EDGES (gray) -->
+
+        <!-- App Service to Azure Maps -->
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#757575;exitX=0;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="webapp" target="maps">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="374"/>
+              <mxPoint x="345" y="374"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- App Service to MySQL -->
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#757575;exitX=0.5;exitY=1;entryX=0.25;entryY=0;" edge="1" parent="1" source="webapp" target="mysql">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="405" y="378"/>
+              <mxPoint x="593" y="378"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- App Service to Blob Storage -->
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#757575;exitX=0.75;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="webapp" target="blob">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="418" y="382"/>
+              <mxPoint x="875" y="382"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- App Service to Key Vault -->
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#757575;exitX=1;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="webapp" target="keyvault">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="386"/>
+              <mxPoint x="1135" y="386"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Functions to MySQL -->
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#757575;exitX=0;exitY=1;entryX=0.75;entryY=0;" edge="1" parent="1" source="functions" target="mysql">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="390"/>
+              <mxPoint x="618" y="390"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Functions to Blob Storage -->
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#757575;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="functions" target="blob">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1045" y="394"/>
+              <mxPoint x="875" y="394"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Functions to Key Vault -->
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#757575;exitX=1;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="functions" target="keyvault">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1070" y="398"/>
+              <mxPoint x="1135" y="398"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- MONITORING EDGES (orange dashed) -->
+
+        <!-- Monitor to App Service -->
+        <mxCell id="e12" value="telemetry" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#E65100;dashed=1;dashPattern=8 4;fontColor=#E65100;fontSize=9;labelBackgroundColor=#FFFFFF;exitX=0.25;exitY=0;entryX=0.25;entryY=1;" edge="1" parent="1" source="monitor" target="webapp">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="713" y="555"/>
+              <mxPoint x="393" y="555"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Monitor to Functions -->
+        <mxCell id="e13" value="telemetry" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#E65100;dashed=1;dashPattern=8 4;fontColor=#E65100;fontSize=9;labelBackgroundColor=#FFFFFF;exitX=0.75;exitY=0;entryX=0.75;entryY=1;" edge="1" parent="1" source="monitor" target="functions">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="738" y="550"/>
+              <mxPoint x="1058" y="550"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

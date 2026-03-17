@@ -51,52 +51,52 @@
         </mxCell>
 
         <!-- User -->
-        <mxCell id="user" value="User" style="shape=mxgraph.azure2.identity.Users;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="60" y="95" width="50" height="50" as="geometry"/>
+        <mxCell id="user" value="User" style="image;aspect=fixed;html=1;points=[];align=center;verticalLabelPosition=bottom;verticalAlign=top;fontSize=12;fontStyle=1;fontColor=#333333;image=img/lib/azure2/identity/Users.svg;" vertex="1" parent="1">
+          <mxGeometry x="60" y="95" width="50" height="55" as="geometry"/>
         </mxCell>
 
         <!-- Tier 1: Application Gateway -->
-        <mxCell id="gateway" value="Application&#xa;Gateway" style="shape=mxgraph.azure2.networking.Application_Gateways;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="gateway" value="Application&#xa;Gateway" style="image;aspect=fixed;html=1;points=[];align=center;verticalLabelPosition=bottom;verticalAlign=top;fontSize=11;fontColor=#333333;image=img/lib/azure2/networking/Application_Gateways.svg;" vertex="1" parent="1">
           <mxGeometry x="750" y="95" width="50" height="50" as="geometry"/>
         </mxCell>
 
         <!-- Tier 2: App Service -->
-        <mxCell id="webapp" value="App Service&#xa;(Web App)" style="shape=mxgraph.azure2.app_services.App_Services;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="webapp" value="App Service&#xa;(Web App)" style="image;aspect=fixed;html=1;points=[];align=center;verticalLabelPosition=bottom;verticalAlign=top;fontSize=11;fontColor=#333333;image=img/lib/azure2/app_services/App_Services.svg;" vertex="1" parent="1">
           <mxGeometry x="380" y="260" width="50" height="50" as="geometry"/>
         </mxCell>
 
         <!-- Tier 2: API Management -->
-        <mxCell id="apim" value="API&#xa;Management" style="shape=mxgraph.azure2.integration.API_Management_Services;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="apim" value="API&#xa;Management" style="image;aspect=fixed;html=1;points=[];align=center;verticalLabelPosition=bottom;verticalAlign=top;fontSize=11;fontColor=#333333;image=img/lib/azure2/app_services/API_Management_Services.svg;" vertex="1" parent="1">
           <mxGeometry x="700" y="260" width="50" height="50" as="geometry"/>
         </mxCell>
 
         <!-- Tier 2: Azure Functions -->
-        <mxCell id="functions" value="Azure Functions&#xa;(Calculation)" style="shape=mxgraph.azure2.compute.Function_Apps;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="functions" value="Azure Functions&#xa;(Calculation)" style="image;aspect=fixed;html=1;points=[];align=center;verticalLabelPosition=bottom;verticalAlign=top;fontSize=11;fontColor=#333333;image=img/lib/azure2/compute/Function_Apps.svg;" vertex="1" parent="1">
           <mxGeometry x="1020" y="260" width="50" height="50" as="geometry"/>
         </mxCell>
 
         <!-- Tier 3: Azure Maps -->
-        <mxCell id="maps" value="Azure Maps" style="shape=mxgraph.azure2.iot.Maps_Accounts;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="maps" value="Azure Maps" style="image;aspect=fixed;html=1;points=[];align=center;verticalLabelPosition=bottom;verticalAlign=top;fontSize=11;fontColor=#333333;image=img/lib/azure2/iot/Azure_Maps_Accounts.svg;" vertex="1" parent="1">
           <mxGeometry x="320" y="430" width="50" height="50" as="geometry"/>
         </mxCell>
 
         <!-- Tier 3: MySQL Database -->
-        <mxCell id="mysql" value="Database&#xa;for MySQL" style="shape=mxgraph.azure2.databases.Azure_Database_MySQL_Server;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="mysql" value="Database&#xa;for MySQL" style="image;aspect=fixed;html=1;points=[];align=center;verticalLabelPosition=bottom;verticalAlign=top;fontSize=11;fontColor=#333333;image=img/lib/azure2/databases/Azure_Database_MySQL_Server.svg;" vertex="1" parent="1">
           <mxGeometry x="580" y="430" width="50" height="50" as="geometry"/>
         </mxCell>
 
         <!-- Tier 3: Blob Storage -->
-        <mxCell id="blob" value="Blob&#xa;Storage" style="shape=mxgraph.azure2.storage.Blob_Block;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="blob" value="Blob&#xa;Storage" style="image;aspect=fixed;html=1;points=[];align=center;verticalLabelPosition=bottom;verticalAlign=top;fontSize=11;fontColor=#333333;image=img/lib/azure2/general/Blob_Block.svg;" vertex="1" parent="1">
           <mxGeometry x="850" y="430" width="50" height="50" as="geometry"/>
         </mxCell>
 
         <!-- Tier 3: Key Vault -->
-        <mxCell id="keyvault" value="Key Vault" style="shape=mxgraph.azure2.security.Key_Vaults;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="keyvault" value="Key Vault" style="image;aspect=fixed;html=1;points=[];align=center;verticalLabelPosition=bottom;verticalAlign=top;fontSize=11;fontColor=#333333;image=img/lib/azure2/security/Key_Vaults.svg;" vertex="1" parent="1">
           <mxGeometry x="1110" y="430" width="50" height="50" as="geometry"/>
         </mxCell>
 
         <!-- Tier 4: Monitor + App Insights -->
-        <mxCell id="monitor" value="Monitor +&#xa;App Insights" style="shape=mxgraph.azure2.management_governance.Monitor;aspect=fixed;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="monitor" value="Monitor +&#xa;App Insights" style="image;aspect=fixed;html=1;points=[];align=center;verticalLabelPosition=bottom;verticalAlign=top;fontSize=11;fontColor=#333333;image=img/lib/azure2/management_governance/Monitor.svg;" vertex="1" parent="1">
           <mxGeometry x="700" y="600" width="50" height="50" as="geometry"/>
         </mxCell>
 
